@@ -1,0 +1,612 @@
+body {
+    font-family: "Poppins", sans-serif;
+    line-height: 1.5;
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+  }
+  
+  .container {
+    width: 80%;
+    margin: 0 auto 0 auto;
+    overflow: hidden;
+  }
+  
+  header {
+    background-color: #95e1d3;
+    color: black;
+    padding: 20px 0;
+    margin-bottom: 50px;
+    min-height: 50px;
+    width: 100%;
+    position: fixed;
+    z-index: 9;
+  }
+  
+  header li {
+    list-style: none;
+    display: inline;
+    padding: 0 20px;
+    margin: 0;
+  }
+  
+  .branding h1 {
+    padding: 0;
+    margin: 0;
+  }
+  
+  header a {
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+  }
+  
+  .branding {
+    float: left;
+  }
+  
+  nav {
+    float: right;
+    margin: 10px;
+  }
+  
+  ul {
+    margin: 0;
+  }
+  
+  nav a:hover {
+    color: blue;
+    font-weight: bold;
+  }
+  
+  #about-us {
+    padding-top: 100px;
+    margin-top: -100px;
+  }
+  
+  .about-us {
+    border-left: 5px #fce38a solid;
+    padding-left: 50px;
+    margin: 50px 0;
+  }
+  
+  .our-vision {
+    border-right: 5px #fce38a solid;
+    padding-right: 50px;
+    margin: 50px 0;
+  }
+  
+  .founders div {
+    width: 70%;
+    background-color: #eaffd0;
+    padding: 20px;
+  }
+  
+  .simar {
+    float: left;
+    margin-right: 30px;
+  }
+  
+  .arjun {
+    margin-top: 60px;
+    float: right;
+  }
+  
+  .simar h3,
+  .arjun h3 {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .founders img {
+    border-radius: 100px;
+  }
+  
+  footer {
+    background-color: #95e1d3;
+    margin: 0;
+    padding: 0;
+    margin-top: 100px;
+  }
+  
+  footer div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .socials img {
+    margin: 0 8px;
+  }
+  
+  footer a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .white-bg{
+    background-color: white;
+    border-radius: 50%;
+  }
+  
+  /************ Bedding Page ************/
+  
+  .card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 40px 10px;
+    color: #333;
+    width: 250px;
+    height: 100%;
+  
+  }
+  
+  .products {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  
+  .products a {
+    text-decoration: none;
+    color: #333;
+    transition: transform 0.2s ease-in;
+  
+  }
+  
+  .products a:hover {
+    transform: scale(1.03);
+  }
+  
+  .img {
+    margin: 0 20px;
+  }
+  
+  .heading h3 {
+    color: grey;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .heading h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 35px;
+  }
+  
+  /*********** CYCLES ************/
+  
+  .img-cycle {
+    margin: 0;
+  }
+  
+  .sort select{
+    outline: none;
+    height: 30px;
+    font-size: 16px;
+    border-radius: 5px;
+    padding-left: 5px;
+    margin-left: 15px;
+    border: 1px solid #ccc;
+  }
+  
+  .sort h2{
+    display: inline;
+  }
+  
+  .heading h3{
+    margin-bottom: 30px;;
+  }
+  
+  /************** RESPONSIVE ********/
+  
+  @media (max-width: 768px){
+  
+    #rent-out{
+      width: 80%;
+      margin:0 auto;
+    }
+  
+    nav{
+      float: none;
+      position: relative;
+      right:20px;
+    }
+  
+    .founders img, .branding, .simar, .arjun{
+      float: none !important;
+    }
+  
+    header{
+      position:static;
+      margin-bottom: -40px;
+    }
+  
+    header li{
+      text-align:center;
+      display: block;
+      padding:10px;
+    }
+  
+    .branding{
+      text-align: center;
+    }
+  
+    .founders div{
+      width: 80% !important;
+      margin: 0 auto;
+    }
+  
+    .founders img{
+      margin-left: 22.5%;
+      margin-bottom: 50px;
+    }
+  
+    .arjun{
+      margin-bottom: -50px !important;
+    }
+  
+    footer div{
+      margin-top:0;
+      flex-direction: column;
+    }
+  
+    .socials{
+      flex-direction: row !important;
+      margin:20px;
+    }
+  
+    .socials img{
+      margin: 0 20px;
+    }
+  
+    #about-us{
+      padding-top: 0px;
+      margin-top: 0px;
+    }
+  
+    .heading-rent h1{
+      width: 80%;
+      margin: 0 auto;
+    }
+  
+    .items{
+      margin: 30px 0;
+    }
+  
+    .products{
+      grid-template-columns: 1fr;
+      margin-top:35px
+    }
+  
+    .card{
+      width: 80%;
+      margin:20px auto;
+    }
+  
+    .simar-form{
+      margin-top:-50px;
+      width: 80%;
+      margin: 0 auto;
+      background:none;
+      margin-bottom: 50px;;
+    }
+  
+    .user-details{
+      flex-direction: column;
+    }
+  
+    .user-details .input-box,
+    #category{
+      width: calc(100% - 15px);
+    }
+  
+    .input-box input, .input-box select{
+      width: 100% !important;
+    }
+  
+    .heading{
+      text-align: center;
+    }
+  
+  }
+
+  :root {
+    --red: #f38181;
+    --yellow: #fce38a;
+    --lime: #eaffd0;
+    --teal: #95e1d3;
+  }
+  
+  body {
+    font-family: "Poppins", sans-serif;
+    height: 100vh;
+  }
+  .home-page{
+    overflow: hidden;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:0 20px;
+    height: 100vh;
+    line-height: 1.6;
+    font-size: larger;
+    background-repeat: no-repeat;
+    background-size:cover;
+    position: relative;
+  
+  }
+  
+  
+  .home-page .content{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    width: 100%;
+    background-image: url("../images/home-bg2.jpg");
+    background-size:cover;
+    margin-top: 0 px;
+    top: 70px;
+    animation: movedown 0.5s  linear 1;
+  
+  }
+  @keyframes movedown {
+    0%{
+      transform: translateY(-100px);
+    }
+    100%{
+      transform: translateY(0);
+    }
+    }
+  
+    
+  
+  
+  
+  .home-page .text{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    color: white;
+    font-size: larger;
+    background-color: rgba(96, 132, 189, 0.609);
+  }
+  .home-page h1{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: var(--red);
+    font-size: 40px;
+  }
+  .home-page p{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: 500;
+  }
+  
+  .home-page span{
+    font-weight: bold;
+    color: var(--lime);
+    margin-top: 20px;
+    font-size: larger;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .home-page .click-here{
+  border-radius: 5px;
+  color: white;
+  border: solid 1px white;
+  background-color: rgba(255, 255, 255, 0);
+  cursor: pointer;
+  padding: 0 10px;
+  height: 45px;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px
+  }
+  .home-page .click-here:hover{
+    background: linear-gradient(135deg, var(--yellow), var(--lime));
+    color: black;
+    border: solid 1px black;
+    
+  }
+  
+  .landing-page {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 20px;
+    height: 100vh;
+    line-height: 1.6;
+    font-size: larger;
+    background-image: url("../images/layered-waves.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .landing-page .content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  .landing-page .text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  
+  .landing-page span {
+    font-weight: bold;
+    color: var(--red);
+  }
+  .landing-page button {
+    border-radius: 5px;
+    border: solid 1px black;
+    background-color: rgba(255, 255, 255, 0.781);
+    cursor: pointer;
+    padding: 0 10px;
+    height: 45px;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+  }
+  .landing-page button:hover {
+    background: linear-gradient(135deg, var(--yellow), var(--lime));
+  }
+  
+  .content h1{
+    font-size: 40px;
+  }
+  
+
+
+  :root {
+    --red: #f38181;
+    --yellow: #fce38a;
+    --lime: #eaffd0;
+    --teal: #95e1d3;
+  }
+  
+  .simar-form {
+    height: 100%;
+    display: flex;
+    font-family: "Poppins", sans-serif;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background: linear-gradient(135deg, var(--teal), var(--lime));
+  }
+  .container-form {
+    max-width: 700px;
+    width: 100%;
+    background-color: #fff;
+    padding: 25px 30px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  }
+  .title {
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+  
+  }
+  .user-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+  }
+  .user-details .input-box,
+  #category {
+    margin-bottom: 15px;
+    width: calc(50% - 15px);
+  }
+  .input-box span.details,
+  #category {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+  .user-details .input-box input,
+  #category {
+    height: 45px;
+    width: 100%;
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px;
+    padding-left: 15px;
+    border: 1px solid #ccc;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+  }
+  .user-details .input-box input:focus,
+  .user-details .input-box input:valid,
+  #category:focus,
+  .description textarea:focus {
+    border-color: var(--red);
+  }
+  .description .description-title {
+    font-size: 20px;
+    font-weight: 500;
+  }
+  
+  .description textarea {
+    resize: none;
+    display: flex;
+    margin-bottom: 5px;
+    width: calc(100% - 15px);
+    height: 55px;
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px;
+    padding-left: 15px;
+    border: 1px solid #ccc;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+  }
+  .btn {
+    border-radius: 5px;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+  }
+  .btn:hover {
+    background-color: #f38181ce;
+  }
+  .button {
+    height: 45px;
+    width: 100%;
+  }
+  .button input {
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: linear-gradient(135deg, var(--teal), var(--lime));
+  }
+  form .button input:hover {
+    background: linear-gradient(-135deg, var(--teal), var(--lime));
+  }
+  
+  footer {
+    margin-top: 0 !important;
+  }
+  
+  @media (max-width: 768px) {
+    .container .content {
+      flex-direction: column;
+    }
+  }
+  
