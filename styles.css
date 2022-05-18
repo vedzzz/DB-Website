@@ -436,7 +436,7 @@ body {
     height: 100vh;
     line-height: 1.6;
     font-size: larger;
-    background-image: url("../images/layered-waves.png");
+    background-image: url("images/layered-waves.png");
     background-repeat: no-repeat;
     background-size: cover;
   }
